@@ -1,0 +1,101 @@
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+}
+
+/* Reset margin and padding, set box-sizing to border-box for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling: full viewport height, flexbox for centering, dark theme */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey900);
+    color: var(--white);
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+}
+main{
+    width: 24%;
+}
+
+/* Card styling: grey background, width 60%, bordered with darker grey */
+.card {
+    background-color: var(--grey800);
+    padding: 1.2rem; /* Adding some padding inside the card */
+    border-radius: 0.8rem; /* Adding rounded corners for a smoother look */
+    box-shadow: 0 4px 6px var(--grey900); /* Adding a subtle shadow for depth */
+    /* margin:0 auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    
+}
+
+.profile-picture{
+    width: 100px;
+    height: 100px;
+    border-radius:50% ;
+    overflow: hidden;
+}
+.profile-picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text-center{
+    text-align: center;
+}
+.text-sm{
+    font-size:large;
+}
+.font-medium{
+    font-weight: 500;
+}
+.text-green-400{
+    color: var(--green);
+}
+.text-xs{
+    font-size: smaller;
+}
+.w-full{
+    width: 100%;
+}
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+
+.items-center{
+    align-items: center;
+}
+.p-4{
+    padding: 0.8rem;
+}
+.gap-2{
+    gap: 0.6rem;
+}
+.bg-slate-400{
+    background-color: var(--grey);
+}
+.rounded{
+    border-radius: 0.4rem;
+}
+
+@media (max-width:768px) {
+    main{
+        width: fit-content;
+    }
+}
